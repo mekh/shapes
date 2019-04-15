@@ -21,7 +21,7 @@ CREATE TABLE Rooms (
 ALTER TABLE Rooms ADD CONSTRAINT rooms_pkey PRIMARY KEY (Id);
 ALTER TABLE Rooms ADD CONSTRAINT fk_color_id FOREIGN KEY (color) REFERENCES colors (Id) ON DELETE CASCADE;
 
-CREATE UNIQUE INDEX rooms_room_key ON Colors (Color);
+CREATE UNIQUE INDEX rooms_room_key ON Rooms (Room);
 
 CREATE TABLE Users (
     Id serial,
